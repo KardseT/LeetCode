@@ -1,4 +1,5 @@
 // 26. Remove Duplicates from Sorted Array
+// Easy
 
 // Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
 
@@ -43,7 +44,7 @@ public:
         if (nums.empty())
         	return 0;
 
-        int index = 0;
+        int i = 0;
 
         for (int j = 0; j < nums.size(); ++j)
         	if (nums[j] != nums[i])
@@ -52,6 +53,12 @@ public:
         		nums[i] = nums[j];
         	}
 
-        return index+1;
+        return i+1;
     }
 };
+
+// Complexity analysis
+
+// Time complextiy : O(n). Assume that nn is the length of array. Each of ii and jj traverses at most nn steps.
+
+// Space complexity : O(1).
