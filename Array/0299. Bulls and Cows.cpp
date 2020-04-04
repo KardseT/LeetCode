@@ -64,3 +64,5 @@ public:
 
 // Runtime: 4 ms, faster than 94.75% of C++ online submissions for Bulls and Cows.
 // Memory Usage: 6.6 MB, less than 100.00% of C++ online submissions for Bulls and Cows.
+
+// tag: hash table
