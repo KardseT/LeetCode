@@ -46,5 +46,17 @@ public:
 // Runtime: 44 ms, faster than 78.12% of C++ online submissions for Decompress Run-Length Encoded List.
 // Memory Usage: 8.4 MB, less than 100.00% of C++ online submissions for Decompress Run-Length Encoded List.
 
+class Solution {
+public:
+    vector<int> decompressRLElist(vector<int>& nums) {
+        vector<int> output;
+        
+        for (int i=0; i < nums.size(); i+=2)
+        	output.insert(output.end(), nums[i], nums[i+1]);
+
+        return output;
+    }
+};
+
 // Related Topics
 // Array
